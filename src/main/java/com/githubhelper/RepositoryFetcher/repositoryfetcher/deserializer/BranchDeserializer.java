@@ -8,7 +8,6 @@ import com.githubhelper.RepositoryFetcher.repositoryfetcher.model.Branch;
 
 import java.io.IOException;
 
-
 public class BranchDeserializer extends JsonDeserializer<Branch> {
 
     @Override

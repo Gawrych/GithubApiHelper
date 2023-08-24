@@ -1,13 +1,13 @@
 package com.githubhelper.RepositoryFetcher.repositoryfetcher.exception;
 
-import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.http.*;
 import org.springframework.web.HttpMediaTypeNotAcceptableException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
-@AllArgsConstructor
+@NoArgsConstructor
 public class ApiExceptionHandler {
 
     @ExceptionHandler(HttpMediaTypeNotAcceptableException.class)
