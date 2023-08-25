@@ -38,7 +38,7 @@ class GithubApiAccessorImplTest {
     private GithubApiAccessorImpl githubApiAccessor;
 
     @Test
-    @DisplayName("creates url by concatenating endpoint and username")
+    @DisplayName("creates a URL by concatenating the endpoint and username")
     void GetAllRepositories_WhenPassUsername_ThenConcatUrl() throws JsonProcessingException {
         // Given
         String repositoryEndpoint = "http://localhost:8080/%s";
@@ -57,7 +57,7 @@ class GithubApiAccessorImplTest {
     }
 
     @Test
-    @DisplayName("creates url by concatenating endpoint, username and repository name")
+    @DisplayName("creates a URL by concatenating the endpoint, username, and repository name")
     void GetAllBranches_WhenPassUsernameAndRepositoryName_ThenConcatUrl() throws JsonProcessingException {
         // Given
         String branchEndpoint = "http://localhost:8080/%s/%s";
