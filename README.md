@@ -30,7 +30,7 @@
 ```
 
 ## Unit tests
-![UnitTests](https://github.com/Gawrych/GithubApiHelper/assets/UnitTests.png)
+![UnitTests](https://github.com/Gawrych/GithubApiHelper/blob/master/assets/UnitTests.png)
 
 
 ## Tech Stack
