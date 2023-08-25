@@ -58,7 +58,7 @@ class GithubHelperRepositoryServiceImplTest {
     }
 
     @Test
-    @DisplayName("avoids forks")
+    @DisplayName("returns a list without forks")
     void GetAllRepositoriesWithBranches_WhenRepositoryOnListIsAFork_ThenFilterItOut() {
         // Given
         List<Repository> repositories = new ArrayList<>(List.of(
