@@ -9,11 +9,11 @@
 [
     {
         "repositoryName": {name},
-        "ownerLogin": {login},
+        "login": {login},
         "branches": [
             {
                 "name": {name},
-                "sha": {sha}
+                "commit": {sha}
             }
         ]
     }
@@ -29,8 +29,8 @@
 }
 ```
 
-## Unit tests
-![UnitTests](https://github.com/Gawrych/GithubApiHelper/blob/master/assets/UnitTests.png)
+## Integration tests
+![IntegrationTest](https://github.com/Gawrych/GithubApiHelper/blob/master/assets/IntegrationTest.png)
 
 
 ## Tech Stack
