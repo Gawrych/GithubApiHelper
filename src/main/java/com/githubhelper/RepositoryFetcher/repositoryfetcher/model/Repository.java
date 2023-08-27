@@ -1,7 +1,14 @@
 package com.githubhelper.RepositoryFetcher.repositoryfetcher.model;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.githubhelper.RepositoryFetcher.repositoryfetcher.deserializer.RepositoryDeserializer;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-@JsonDeserialize(using = RepositoryDeserializer.class)
-public record Repository(String name, String ownerLogin, boolean isFork) {}
+public record Repository(
+        @JsonProperty("name")
+        String name,
+
+        @JsonProperty("owner")
+        Owner owner,
+
+        @JsonProperty("fork")
+        boolean isFork)
+{}

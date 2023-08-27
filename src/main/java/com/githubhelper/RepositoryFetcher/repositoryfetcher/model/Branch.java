@@ -1,7 +1,11 @@
 package com.githubhelper.RepositoryFetcher.repositoryfetcher.model;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.githubhelper.RepositoryFetcher.repositoryfetcher.deserializer.BranchDeserializer;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-@JsonDeserialize(using = BranchDeserializer.class)
-public record Branch(String name, String sha) {}
+public record Branch(
+        @JsonProperty("name")
+        String name,
+
+        @JsonProperty("commit")
+        Commit commit)
+{}
