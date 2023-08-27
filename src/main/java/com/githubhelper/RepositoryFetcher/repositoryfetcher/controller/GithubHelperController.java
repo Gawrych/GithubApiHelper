@@ -1,7 +1,7 @@
 package com.githubhelper.RepositoryFetcher.repositoryfetcher.controller;
 
 import com.githubhelper.RepositoryFetcher.repositoryfetcher.model.RepoBranchInfo;
-import com.githubhelper.RepositoryFetcher.repositoryfetcher.service.GithubHelperRepositoryService;
+import com.githubhelper.RepositoryFetcher.repositoryfetcher.service.GithubService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -14,11 +14,11 @@ import java.util.List;
 @RequestMapping(value = "/api/v1/repositories", produces = MediaType.APPLICATION_JSON_VALUE)
 public class GithubHelperController {
 
-    private final GithubHelperRepositoryService githubHelperRepositoryService;
+    private final GithubService githubService;
 
     @GetMapping("/{username}")
     @ResponseStatus(HttpStatus.OK)
     public List<RepoBranchInfo> getRepoBranchInfo(@PathVariable String username) {
-        return githubHelperRepositoryService.getAllRepositoriesWithBranches(username);
+        return githubService.getAllRepositoriesWithBranches(username);
     }
 }
