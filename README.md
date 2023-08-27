@@ -30,7 +30,7 @@
 ```
 
 ## Integration tests
-![IntegrationTest](https://github.com/Gawrych/GithubApiHelper/blob/master/assets/IntegrationTest.png)
+![IntegrationTest](https://github.com/Gawrych/GithubApiHelper/blob/refactor/clean-up/assets/IntegrationTest.png)
 
 
 ## Tech Stack
